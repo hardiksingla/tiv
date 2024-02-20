@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/homeelements.css">
+    <link rel="stylesheet" href="../css/blog_page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,0,0" />
+    <link rel="icon" type="image/png" href="../image/tiv logo.png"><script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+<body>
+    <div class = "nav">
+      <a href="../blogs.html">
+        <span class="material-symbols-outlined" style="text-decoration:none; padding-top: 5px;">
+                arrow_back
+        </span>
+      </a>
+        <div class = "logo">
+            <a href = "../index.html"><img src="../image/hor logo.jpg"></a>
+        </div>
+        <div class = "menu">
+            <ul class = "menu-items">
+                <li class = "menu-item">
+                    <a href = "../blogs.html">Back</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="header">
+        <h2>INDIA OVERTAKES UK IN GDP RACE</h2>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2> Should we really be Happy?</h2>
+            <h5>Published on Aug 14, 2023</h5>
+            <img src="../image/blog/Blog2_Image1.png" class="image">
+            <p>India has crossed United Kingdom and has become the fifth largest economy in terms of GDP. This is a 
+                indeed a huge milestone but netizens, before aggrandizing the milestone let us do a reality check! 
+                So, if you are aware: GDP stands for Gross Domestic Product. It means the total amount of services and 
+                goods produced within the boundaries of the country. But have we ever noticed how many stomachs we 
+                need to feed from the same profits? </p>
+            <p>India's population is twenty times more than that of England. So, England is like a small prosperous 
+                village but we are like the jam-packed slums surviving on the same produce. 
+                India's GDP has grown, no doubt. But there is little doubt that India's population has grown too 
+                aggravating the problem. </p>
+            <p>If we compare the per capita income of the nations then India is still struggling. India is still at 144th 
+                position of the 194 economies. India's unbridled population explosion hasn't let us reach the expected 
+                pinnacles of glory. Sadly, the situation is still grim in this respect as we will soon surpass China in the 
+                coming years. </p>
+            <p>Back in the 1900s when realization dawned upon Chinese leaders that population will hamper their 
+                growth, they implemented the stringent one-child policy. It is quite important to point out that China is 
+                roughly three times larger than India but we sit very close to each other when it comes to population 
+                figures. </p>
+            <p>Back then, their government took serious actions to curb the growing population, then think about what 
+                will become of us. Till now, there is no concrete action task of the government to tackle the issue. 
+                Sometimes the leaders promise to take action but it seems that the action hides behind the mere words 
+                of tall promises. </p>
+            <p>The increasing divide between rich and poor is a grave concern too. The rich is becoming richer but there 
+                is not much elevation in the conditions of poor people compared to the GDP numbers. 
+                On a brighter note, India is the current largest growing economy in the world. But as citizens of India, if 
+                we could remove this two common hedge growths in our path, then we will reach our destination of 
+                success early. </p>
+            <p>This article is intended to make people see and realize what lies beneath the tip of the iceberg. This will 
+                help all of us to strive harder for excellence and bring new vigor in the road of economic development 
+                instead of blowing the trumpet.
+                </p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <!-- <img src="../image/Tanav Bhatia.jpg" class="image"> -->
+            <p>This blog is written by Diksha Gupta.</p>
+          </div>
+        </div>
+      </div>
+      <section id="loading">
+        <div id="loader">
+          <img src="image/loading.gif" alt="" id = "loader-gif">
+          <p id="changingText2">Empowering Students for a Bright Future...</p>
+        </div>
+    </section>
+    <script>
+        var loading = document.getElementById("loading");
+        window.addEventListener("load", function () {
+          loading.style.display = "none";
+        })
+
+        const loadingLines = [
+            "Empowering Students for a Bright Future...",
+            "Connecting Dreams to Opportunities...",
+            "Loading Up Opportunities for Every Student...",
+            "Bringing Student Welfare to Your Fingertips...",
+            "Loading the Bridge to Your Educational Success...",
+            "Empowering Education, One Loading Bar at a Time...",
+            "Loading Smiles through Student Support...",
+            "Fueling Ambitions, Loading Possibilities...",
+            "Connecting Students to a World of Welfare...",
+            "Loading Compassion, Empowering Students...",
+            "Empowering Students to Rise and Shine...",
+            "Loading the Pathway to Student Well-being...",
+            "Supporting Students, One Loading Step at a Time...",
+            "Loading Progress for Every Student's Journey...",
+            "Fueling Your Education, Loading Success...",
+            "Empowering Students to Reach New Heights...",
+            "Loading a Spectrum of Opportunities for Students...",
+            "Connecting Students with Resources, Loading...",
+            "Loading Excellence in Student Support...",
+            "Empowering Students Awaiting Just a Few More Moments..."
+        ];
+
+        const changingText2 = document.getElementById("changingText2");
+        let currentIndex = 0;
+    
+        function updateText2() {
+          changingText2.textContent = loadingLines[currentIndex];
+          currentIndex = (currentIndex + 1) % loadingLines.length;
+        }
+    
+        setInterval(updateText2, 3000); 
+      </script>
+</body>
+</html>

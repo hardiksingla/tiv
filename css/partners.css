@@ -1,0 +1,101 @@
+#Partners{
+    z-index: 20;
+    background-color: rgb(132, 144, 255);
+}
+#PartnersH{
+    background-color: rgb(132, 144, 255);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8vw;
+    padding-bottom: -10vw;
+}
+#Partners a{
+    padding-top: -19vw;
+    text-decoration: none;
+}
+
+#Part1, #Part2, #Part3,#Part4{
+    padding: 10px;
+    background-color: #58d8ff;
+    height: 30vh;
+    margin-left: 2vw;
+    width: 20vw;
+    border-radius: 10px;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    transition: 0.5s;
+    margin: 2rem auto 2rem auto;
+    
+}
+
+#Part1 img, #Part2 img, #Part3 img,#Part4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    z-index: 100;
+    opacity: 0.2;
+}
+
+#Part1 h1, #Part2 h1, #Part3 h1,#Part4 h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 200;
+    text-align: center;
+    width: 100%;
+}
+
+#Part1 p, #Part2 p, #Part3 p,#Part4 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 200;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 767px){
+
+    #Part1:hover, #Part2:hover, #Part3:hover,#Part4:hover{
+        height: 40vh;
+        margin: 0px;
+        width: 30vw;
+    }
+    
+    #Part1:hover img, #Part2:hover img, #Part3:hover img,#Part4:hover img{
+        opacity: 0.7;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #PartnersH{
+        font-size: 3.5vw;
+    }
+    #Part1, #Part2, #Part3,#Part4{
+        width: 90%;
+        /* height: 20rem; */
+        margin: 5px auto;
+    }
+    #Partners{
+        grid-template-columns: 1fr;
+        gap:1px
+    }
+    #Part1 img, #Part2 img, #Part3 img,#Part4 img{
+        opacity: 1;
+    }
+    #Part1 h1, #Part2 h1, #Part3 h1,#Part4 h1{
+        display: none;
+    }
+    
+}
